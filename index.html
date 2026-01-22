@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>web</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+      <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-size:30px">Menit.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNews" aria-controls="navbarNews" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNews">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Nasional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Internasional</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Olahraga</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Teknologi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hiburan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- MARQUEE BAR -->
+  <div class="bg-danger text-white py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <marquee behavior="scroll" direction="left" class="fw-semibold">
+        [Populer] Pemerintah umumkan kebijakan baru ekonomi digital • Liga 1: Persija kalahkan Persib 3-1 • Harga BBM turun minggu ini • iPhone 16 resmi meluncur di Indonesia
+      </marquee>
+      <div id="clock" class="fw-bold px-2 text-end" style="width:300px"></div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+          <!-- Carousel Berita -->
+      <div class="col-md-8">
+        <div id="carouselNews" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/gambar1.jpg" class="d-block w-100 rounded" alt="Berita 1">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Berita Utama Hari Ini</h5>
+                <p>Pemerintah siapkan strategi baru hadapi ekonomi global 2025.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar2.jpg" class="d-block w-100 rounded" alt="Berita 2">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Timnas Indonesia Menang!</h5>
+                <p>Indonesia kalahkan Vietnam dengan skor 2-0.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar3.jpg" class="d-block w-100 rounded" alt="Berita 3">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>iPhone 16 Resmi Dirilis</h5>
+                <p>Apple meluncurkan produk terbaru dengan fitur AI canggih.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar4.jpg" class="d-block w-100 rounded" alt="Berita 4">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Konser Musik Terbesar 2025</h5>
+                <p>Ribuan penonton padati stadion untuk menyaksikan konser internasional.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar5.jpg" class="d-block w-100 rounded" alt="Berita 5">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Pemilu 2025 Semakin Dekat</h5>
+                <p>Partai politik mulai deklarasikan calon presiden.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNews" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNews" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <!-- List Berita Populer -->
+      <div class="col-md-4">
+        <div class="card h-100 p-4 bg-info border-0">
+        <h4 class="mb-3 text-center text-light">BERITA POPULER</h4>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Harga BBM turun minggu ini</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Liga 1: Persija kalahkan Persib</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Apple luncurkan iPhone 16</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Kecelakaan di tol Cipularang</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Kurs rupiah menguat terhadap dolar</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Pemilu 2025 Semakin Dekat</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Kebijakan Ekonomi Baru 2025r</a>
+        </div>
+      </div>
+    </div>
+      </div>
+  </div>
+  <div  class="container">
+  <hr>
+  <h3>Berita Utama</h3>
+  </hr>
+      <div class="row">
+          <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar1.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Deretan HP Serupa iPhone dengan Harga Jauh Lebih Murah, Ini Pilihan Terbaiknya!</h6>
+            <p class="news-summary">di era digital saat ini, memiliki ponsel pintar dengan desain menawan dan performa mumpuni menjadi dambaan banyak orang. iPhone, dengan desain premium dan ekosistemnya yang khas, seringkali menjadi tolok ukur. Namun, harga yang tinggi kerap menjadi kendala bagi sebagian besar konsumen di Indonesia. </p>
+
+<p>Oleh karena itu, banyak produsen Android berinovasi menghadirkan perangkat yang mengadopsi estetika desain iPhone, mulai dari bentuk bodi kotak, modul kamera, hingga fitur 'Dynamic Island' versi mereka sendiri.</p>
+            <a href="berita-ip.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar2.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Kuningan Bertasbih Digelar LKKS, Mamah Dedeh Sapa Ribuan Jemaah</h6>
+            <p class="news-summary">Kuningan Bertasbih Digelar LKKS, Mamah Dedeh Sapa Ribuan Jemaah</p>
+            <a href="berita-sd.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar3.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">BGN Usul Sopir MBG Pakai Kostum Power Rangers Supaya Siswa Antusias Makan</h6>
+            <p class="news-summary">BGN Usul Sopir MBG Pakai Kostum Power Rangers Supaya Siswa Antusias Makan</p>
+            <a href="berita-gunung.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar4.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Wajah CN-295, Pesawat Pengantar Gubernur untuk Tinjau Perbatasan Kaltara</h6>
+            <p class="news-summary">Wajah CN-295, Pesawat Pengantar Gubernur untuk Tinjau Perbatasan Kaltara</p>
+            <a href="berita-pesawat.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar5.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Saudi Perketat Aturan Transportasi Haji 2026, Pelanggaran Bisa Didenda hingga Rp400 Jutaan</h6>
+            <p class="news-summary">Saudi Perketat Aturan Transportasi Haji 2026, Pelanggaran Bisa Didenda hingga Rp400 Jutaan</p>
+            <a href="berita-penemuan.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar6.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Jalan suci Putraku: salah satu penemuan arkeologi terbesar di zaman modern.</h6>
+            <p class="news-summary">Jalan suci Putraku: salah satu penemuan arkeologi terbesar di zaman modern..</p>
+            <a href="berita-penemuan.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  <script>
+    // Menampilkan jam real-time
+    setInterval(() => {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toLocaleString('id-ID');
+    }, 1000);
+  </script>
+  </body>
+</html>
